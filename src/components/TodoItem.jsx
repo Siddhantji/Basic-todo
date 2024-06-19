@@ -1,4 +1,5 @@
 function TodoItem({ todoName, todoDate }) {
+  console.log(todoName, todoDate);
   return (
     <div className="container">
       <div className="row kg-row">
