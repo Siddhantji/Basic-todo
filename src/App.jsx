@@ -1,20 +1,21 @@
-import { useState } from 'react';
-import AddTodo from './components/AddTodo';
-import TodoItem1 from './components/TodoItem1';
-import AppName from './components/AppName';
-import './App.css'
+import AddTodo from "./components/AddTodo";
+import AppName from "./components/AppName";
+import TodoItem from "./components/TodoItem";
+import "./App.css";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <center className='todo-container'>
+      <center className="todo-container">
         <AppName />
         <AddTodo />
-        <TodoItem1 />
+
+        <div className="items-container">
+          <TodoItem todoName="Kikk" todoDate="04/12/2000" />
+          
+        </div>
       </center>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
